@@ -1,0 +1,51 @@
+/*Selector*/
+
+/*Selector de etiqueta*/
+h3 {
+  color: red;
+}
+
+/*Selector de clase*/
+.selectorClase {
+  color: blue;
+}
+
+/*Selector ID*/
+#selectorId {
+  color: peru;
+}
+
+/*Ejm de herencia y con inherit , como vemos el h3 arriba esta definido con un color rojo y pues dentro de la clase herencia tiene un h3 y se le daba el color rojo en vez del brown , eso pasa porque le estamos dando un color rojo a todos los h3 por eso le puse el inherit para que tome el color del padre*/
+.herencia {
+  color: brown;
+}
+
+.claseHerencia {
+  color: inherit;
+}
+
+.parradoHerencia {
+  color: inherit;
+}
+
+/*Ejemplo con cascada, como vez se le tiene que aplica el ultimo valor con color chocolate*/
+.descripcion {
+  color: cadetblue;
+
+  color: chocolate;
+}
+
+/*Ejemplo con especifidad*/
+p {
+  color: black;
+}
+
+.soyClase {
+  color: blue;
+}
+
+#soyId {
+  color: brown;
+}
+
+/*Por ultimo el importante pero no lo pondre porque no se usa mucho*/

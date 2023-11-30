@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Manera externa con link de css (mas utilizada)-->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Fundamentos CSS</title>
+  </head>
+  <body>
+    <!--Forma con etiqueta-->
+    <!-- <style>
+      selector{
+        propiedad: valor;
+      }
+    </style> -->
+
+    <header>
+      <h1>Introduccion a CSS</h1>
+    </header>
+
+    <h2>Selectores</h2>
+    <p>
+      Los selectores haceb referencia a que etiqueta se le va a dar estilo , los
+      selectores son las etiquetas del HTML por ejm el h1 , p , h2, etc
+    </p>
+
+    <strong>Existen tipos de selectores</strong>
+
+    <h3>Selector de etiqueta</h3>
+    <p>Este selector hace referencia a la etiqueta HTML</p>
+    <p>En este ejemplo el daremos al h3 un color rojo</p>
+
+    <h3 class="selectorClase">Selector de clase</h3>
+    <p>
+      El selector de clase es el que mas utilizaremos en dar estilos a las
+      etiquetas , es como un identificador a la etiqueta que se le va a dar
+      estilo , algo asi como un apodo o sobrenombre y en el archivo css se manda
+      a llamar con un punto y el nombre de la clase .nombreClase , pueden haber
+      varias etiquetas con el mismo nombre de clase
+    </p>
+    <p>En este ejemplo le daremos un colo azul</p>
+
+    <h3 id="selectorId">Selector de ID</h3>
+    <p>
+      El selector Id es un identificador unico en las etiquetas osea si tu le
+      pones un nombre de id a un etiqueta , ese nombre no debe de ser llamado en
+      otra etiqueta , mejor dicho no se puede mandar a llamar dos id con el
+      mismo nombre, se manda a llamar con el michi #nombreId
+    </p>
+    <p>En este ejemplo le daremos el color de peru</p>
+
+    <h3 style="color: salmon">Selector inline</h3>
+    <p>
+      Este selector es el que tiene como atributo llamado style y le pones los
+      estilos
+    </p>
+    <p>En este ejemplo le daremos un colo salmon</p>
+
+    <h2>Herencia</h2>
+    <p>
+      La herencia es como decir el padre tiene un estilo pues los hijos lo
+      heredan , si un div por ejemplo tiene hijos como un h1 y un parrafo y a
+      ese div le pones color rojo , los hijos heredan ese coloc, ahora hay casos
+      en lo que no se heredan , para eso puedes utilizar la el valor inherit en
+      el heredero osea el hijo
+    </p>
+    <strong>Ejemplo</strong>
+    <div class="herencia">
+      <h3 class="claseHerencia">Ejm de herencia</h3>
+      <p class="parradoHerencia">Soy un parrafo</p>
+    </div>
+
+    <h2>Cascada</h2>
+    <p class="descripcion">
+      Cascada es como su nombre lo dice pues de arriba hacia abajo y el que esta
+      en lo ultimo es el que toma el valor con mas fuerza o el que se le aplica
+    </p>
+
+    <h2>Especificidad</h2>
+    <p>
+      La escpecificidad son valores ,es como un numero con una cantidad de
+      fuerza segun los tipos de selctores , por ejemplo el menos fuerte es el
+      selector de etiqueta y el mas fuerte es el !important , pero como no es
+      recomendable usar quedaria el #id la cual en estilos no se recomienda usar
+      , mas se usaria con JS
+    </p>
+    <strong>Ejemplo con Especificidad</s>
+    <div class="especificidad">
+      <p style="color: #0f7452;" class="soyClase" id="soyId">Soy una especificidad con todos los selectores</p>
+    </div>
+  </body>
+</html>
